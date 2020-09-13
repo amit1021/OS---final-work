@@ -1,0 +1,37 @@
+To run this program we first compile the file
+
+make set_policy
+
+If we want SCHED_OTHER 
+
+sudo ./set_policy 0 0   The priority can be just 0
+
+If we want SCHED_IDLE 
+sudo ./set_policy 5 0   The priority can be just 0
+
+If we want SCHED_DEADLINE 
+sudo ./set_policy 6 0   The priority can be just 0
+
+If we want SCHED_RR 
+sudo ./set_policy 2 1-99  The priority can be between 1 - 99
+
+If we want SCHED_FIFO
+sudo ./set_policy 1 1-99   The priority can be between 1 - 99
+
+To check that the data will change, we will run the program and the pid print in the terminal.
+there is a few secend to see the stat of the proccess before it change.
+
+In another terminal we will run
+
+chrt -p <pid>
+
+After we receive the message
+"To stop the procces type any char"
+
+we will run again
+
+chrt -p <pid>
+
+The stat is change.
+
+To stop this progam type any char/

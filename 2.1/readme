@@ -1,0 +1,7 @@
+To run this program we first compile the file
+
+make chek_pid
+
+Then we run the program with pid that we want to check.
+
+./chek_pid <pid number> 

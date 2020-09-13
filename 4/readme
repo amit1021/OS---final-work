@@ -1,0 +1,10 @@
+To run this program we will compile first
+
+make dir_traversal
+
+Then we will run the program with name of directory
+
+./dir_traversal <name_of_directory>
+
+The program get just one argument (the name of directory)
+

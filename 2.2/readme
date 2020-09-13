@@ -1,0 +1,15 @@
+To run this program we need to compail two file
+
+make all
+
+We will run first the server 
+
+./server
+
+And then the client with three arguments, pid of the server, signal number and the number of time we want to sent the signals or print
+
+./client <server pid> number_of_signal number_of_times
+
+When the server is running, his pid print in the terminal.
+This pid we need to write when we run the client.
+
